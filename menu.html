@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title></title>
+    <script src="mui-master/dist/js/mui.min.js"></script>
+    <link rel="stylesheet" href="css/base.css">
+    <link href="mui-master/dist/css/mui.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/index.css"/>
+    <script type="text/javascript" charset="utf-8">
+        mui.init();
+    </script>
+</head>
+
+<body>
+<header class="mui-bar mui-bar-nav" style="background-color: #9D4949;">
+    <a href="#" onClick="javascript:location.href=rurl+'.html';" class="mui-icon mui-icon-back" style="color: #fff;"></a>
+    <h1 class="mui-title" style="color: #fff;">菜单</h1>
+    <a class="mui-icon mui-icon-settings mui-pull-right very" style="color: #fff;"></a>
+    <a class="mui-icon mui-icon-home mui-pull-right" style="color: #fff;"></a>
+</header>
+<div class="mui-content">
+</div>
+<ul class="mui-table-view">
+    <li class="mui-table-view-cell mui-media">
+        <a href="javascript:;">
+            <img class="mui-media-object mui-pull-left new" src="./images/caidan5.gif">
+            <div class="mui-media-body vive">
+                爆炒何亮亮
+                <p class="f_right">2017-8-27</p>
+                <p class='mui-ellipsis'>能和心爱的人一起睡觉，是件幸福的事情；可是，打呼噜怎么办？</p>
+                <p class="f_bottom">15元</p>
+            </div>
+        </a>
+    </li>
+    <li class="mui-table-view-cell mui-media">
+        <a href="javascript:;">
+            <img class="mui-media-object mui-pull-left new" src="./images/caidan5.gif">
+            <div class="mui-media-body vive">
+                清蒸殷逸文
+                <p class="f_right">2017-8-27</p>
+                <p class='mui-ellipsis'>想要这样一间小木屋，夏天挫冰吃瓜，冬天围炉取暖.</p>
+                <p class="f_bottom">15元</p>
+            </div>
+        </a>
+    </li>
+    <li class="mui-table-view-cell mui-media">
+        <a href="javascript:;">
+            <img class="mui-media-object mui-pull-left new" src="./images/caidan5.gif">
+            <div class="mui-media-body vive">
+                油炸孙国
+                <p class="f_right">2017-8-27</p>
+                <p class='mui-ellipsis'>烤炉模式的城，到黄昏，如同打翻的调色盘一般.</p>
+                <p class="f_bottom">15元</p>
+            </div>
+        </a>
+    </li>
+    <li class="mui-table-view-cell mui-media">
+        <a href="javascript:;">
+            <img class="mui-media-object mui-pull-left new" src="./images/caidan5.gif">
+            <div class="mui-media-body vive">
+                红烧杰王子
+                <p class="f_right">2017-8-27</p>
+                <p class='mui-ellipsis'>想要这样一间小木屋，夏天挫冰吃瓜，冬天围炉取暖.</p>
+                <p class="f_bottom">15元</p>
+            </div>
+        </a>
+    </li>
+    <li class="mui-table-view-cell mui-media">
+        <a href="javascript:;">
+            <img class="mui-media-object mui-pull-left new" src="./images/caidan5.gif">
+            <div class="mui-media-body vive">
+                清炒周锐
+                <p class="f_right">2017-8-27</p>
+                <p class='mui-ellipsis'>想要这样一间小木屋，夏天挫冰吃瓜，冬天围炉取暖.</p>
+                <p class="f_bottom">15元</p>
+            </div>
+        </a>
+    </li>
+    <li class="mui-table-view-cell mui-media">
+        <a href="javascript:;">
+            <img class="mui-media-object mui-pull-left new" src="./images/caidan5.gif">
+            <div class="mui-media-body vive">
+                清炒周锐
+                <p class="f_right">2017-8-27</p>
+                <p class='mui-ellipsis'>想要这样一间小木屋，夏天挫冰吃瓜，冬天围炉取暖.</p>
+                <p class="f_bottom">15元</p>
+            </div>
+        </a>
+    </li>
+</ul>
+
+
+<script type="text/javascript">
+	//跳转首页
+	 var request =
+        {
+            QueryString: function (val) {
+                var uri = window.location.search;
+                var re = new RegExp("" + val + "=([^&?]*)", "ig");
+                return ((uri.match(re)) ? (uri.match(re)[0].substr(val.length + 1)) : null);
+            }
+        }
+    var rurl = request.QueryString("str");
+</script>
+</body>
+</html>
